@@ -4,199 +4,46 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Login</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-	<style>
-		:root {
-			--brand: #2f9ad8;
-			--brand-deep: #228bc7;
-			--panel: rgba(255, 255, 255, 0.9);
-			--text-soft: #8d8d8d;
-			--text-link: #2f9ad8;
-			--bg-left: #efe4d1;
-			--bg-right: #c7dbef;
-		}
-
-		* {
-			box-sizing: border-box;
-		}
-
-		body {
-			margin: 0;
-			min-height: 100vh;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			font-family: "Barlow", "Segoe UI", sans-serif;
-			background: linear-gradient(100deg, var(--bg-left) 0%, #dfe3df 45%, var(--bg-right) 100%);
-			color: #4f4f4f;
-		}
-
-		h1 {
-			margin: 0 0 2px;
-		}
-
-		.login-card {
-			width: min(92vw, 430px);
-			padding: 44px 28px 40px;
-			text-align: center;
-			border-radius: 24px;
-		}
-
-		.group-logo {
-			width: 180px;
-			height: 130px;
-			margin: 0 auto 20px;
-			display: block;
-		}
-
-		.login-card .material-symbols-outlined {
-			display: block;
-			font-family: "Material Symbols Outlined";
-			font-size: 240px !important;
-			font-weight: normal;
-			font-style: normal;
-			line-height: 1;
-			letter-spacing: normal;
-			text-transform: none;
-			white-space: nowrap;
-			direction: ltr;
-			font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
-			color: var(--brand);
-			margin-bottom: 4px;
-		}
-
-		.form {
-			display: grid;
-			gap: 14px;
-		}
-
-		.input-wrap {
-			display: grid;
-			grid-template-columns: 44px 1fr;
-			align-items: center;
-			height: 52px;
-			border-radius: 999px;
-			background: var(--panel);
-			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
-		}
-
-		.input-icon {
-			display: grid;
-			place-items: center;
-			height: 100%;
-			border-right: 1px solid #d9d9d9;
-		}
-
-		.input-icon svg {
-			width: 18px;
-			height: 18px;
-			fill: #9fa0a3;
-		}
-
-		.input-wrap input {
-			width: 100%;
-			height: 100%;
-			border: 0;
-			outline: 0;
-			background: transparent;
-			padding: 0 18px 0 14px;
-			font-size: 18px;
-			font-weight: 500;
-			letter-spacing: 0.03em;
-			color: #6e6e6e;
-		}
-
-		.input-wrap input::placeholder {
-			text-transform: uppercase;
-			font-weight: 600;
-			color: #b0b0b0;
-			letter-spacing: 0.04em;
-		}
-
-
-		.login-btn {
-			margin: 10px auto 0;
-			width: 178px;
-			height: 56px;
-			border: 0;
-			border-radius: 999px;
-			background: linear-gradient(180deg, #38a8e8 0%, var(--brand) 100%);
-			color: white;
-			font-size: 34px;
-			font-weight: 700;
-			letter-spacing: 0.03em;
-			font-family: inherit;
-			cursor: pointer;
-			transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
-		}
-
-		.login-btn:hover,
-		.login-btn:focus-visible {
-			transform: translateY(-1px);
-			box-shadow: 0 8px 18px rgba(47, 154, 216, 0.28);
-			background: linear-gradient(180deg, #3db3f5 0%, var(--brand-deep) 100%);
-		}
-
-		.login-btn:active {
-			transform: translateY(0);
-		}
-
-		@media (max-width: 420px) {
-			.login-card {
-				padding: 36px 20px 32px;
-			}
-
-			.group-logo {
-				width: 160px;
-				height: 116px;
-			}
-
-			.login-card .material-symbols-outlined {
-				font-size: 120px !important;
-			}
-
-			.input-wrap {
-				height: 48px;
-			}
-
-			.login-btn {
-				width: 164px;
-				height: 52px;
-				font-size: 31px;
-			}
-		}
-	</style>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>TODO: Welcome to Project bla bla Portal</h1>
+	<div class="d-flex flex-column align-items-center justify-content-center min-vh-100" style="background: linear-gradient(100deg, #efe4d1 0%, #dfe3df 45%, #c7dbef 100%);">
+		<h1 class="mb-2">TODO: Welcome to Project bla bla Portal</h1>
 
-	<main class="login-card" aria-label="Login form">
-		<span class="material-symbols-outlined">groups</span>
+		<main class="card p-5 shadow-sm" style="width: min(92vw, 430px);" aria-label="Login form">
+			<span class="material-symbols-outlined d-block text-center text-primary mb-3" style="font-size: 240px; font-family: 'Material Symbols Outlined'; line-height: 1;">groups</span>
 
-		<form class="form" action="#" method="post">
-			<label class="input-wrap">
-				<span class="input-icon" aria-hidden="true">
-					<svg viewBox="0 0 24 24">
-						<path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.34 0-10 1.68-10 5v3h20v-3c0-3.32-6.66-5-10-5z"></path>
-					</svg>
-				</span>
-				<input type="text" name="username" placeholder="Username" autocomplete="username" required />
-			</label>
+			<form action="#" method="post" id="loginForm">
+				<div class="mb-3">
+					<input type="text" class="form-control form-control-lg" id="username" name="username" placeholder="Username" autocomplete="username" required />
+				</div>
 
-			<label class="input-wrap">
-				<span class="input-icon" aria-hidden="true">
-					<svg viewBox="0 0 24 24">
-						<path d="M12 2a5 5 0 00-5 5v3H6a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2v-8a2 2 0 00-2-2h-1V7a5 5 0 00-5-5zm-3 8V7a3 3 0 016 0v3H9zm3 3a2 2 0 012 2 2 2 0 01-1 1.73V18h-2v-1.27A2 2 0 0110 15a2 2 0 012-2z"></path>
-					</svg>
-				</span>
-				<input type="password" name="password" placeholder="Password" autocomplete="current-password" required />
-			</label>
+				<div class="mb-3">
+					<input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Password" autocomplete="current-password" required />
+					<div id="errorMessage" class="text-danger mt-2" style="display: none;"></div>
+				</div>
 
-			<button type="submit" class="login-btn">LOGIN</button>
-		</form>
-	</main>
+				<button type="submit" class="btn btn-primary btn-lg rounded-pill d-block mx-auto">LOGIN</button>
+			</form>
+		</main>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		document.getElementById('loginForm').addEventListener('submit', function(e) {
+			e.preventDefault();
+			const username = document.getElementById('username').value;
+			const password = document.getElementById('password').value;
+			const errorMessage = document.getElementById('errorMessage');
+			
+			if (username === 'khadija' && password === 'Passw0rd') {
+				window.location.href = 'main.html';
+			} else {
+				errorMessage.textContent = 'Invalid username or password';
+				errorMessage.style.display = 'block';
+			}
+		});
+	</script>
 </body>
 </html>
